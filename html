@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ruang Kreatif Dinda Ayu</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #fffaf7;
+            color: #4a3b32;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section, footer {
+            background: #ffffff;
+            width: 100%;
+            max-width: 700px;
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(74, 59, 50, 0.05);
+            margin-bottom: 24px;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .hero-content h1 {
+            font-size: 28px;
+            color: #2b1f1d;
+            line-height: 1.3;
+        }
+
+        .hero-content span {
+            color: #9e2a2b;
+            font-size: 20px;
+        }
+
+        .hero-content p {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #7a685c;
+            line-height: 1.6;
+        }
+
+        .hero-pic {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: #f0f0f0;
+            overflow: hidden;
+            flex-shrink: 0;
+            border: 2px solid #9e2a2b;
+        }
+
+        .hero-pic img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Umum */
+        h2 {
+            font-size: 18px;
+            color: #9e2a2b;
+            margin-bottom: 15px;
+            border-bottom: 2px solid #f5ebe6;
+            padding-bottom: 8px;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #5c4d44;
+        }
+
+        /* Hobi */
+        .fav-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .fav-card {
+            background: #fffaf7;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #9e2a2b;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .fav-card h3 {
+            font-size: 16px;
+            color: #2b1f1d;
+            text-transform: capitalize;
+        }
+
+        .fav-img-box {
+            width: 100%;
+            height: 180px;
+            border-radius: 8px;
+            overflow: hidden;
+            background: #e9ecef;
+        }
+
+        .fav-img-box img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        /* Musik */
+        .song-list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 10px;
+        }
+
+        .song-list a {
+            text-decoration: none;
+            color: #4a3b32;
+            font-size: 14px;
+            display: inline-block;
+            transition: color 0.2s;
+        }
+
+        .song-list a:hover {
+            color: #9e2a2b;
+        }
+
+        /* Footer */
+        .footer-section {
+            text-align: center;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 15px 0;
+        }
+
+        .social-links a {
+            text-decoration: none;
+            color: #9e2a2b;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        .copy {
+            font-size: 12px;
+            color: #a39084;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- hero -->
+    <section class="hero-section">
+        <div class="hero-content">
+            <h1>
+                HALO SEMUANYA!<br>
+                <span>안녕!!</span>
+            </h1>
+            <p>
+                Selamat datang teman teman di ruang kreatif aku. 
+                di sini kamu bisa kenal aku lebih dekat lewat 
+                hal hal yang aku suka.
+            </p>
+        </div>
+
+        <div class="hero-pic">
+            <img src="dinda/photo-6125325557349159735-y.jpg" alt="foto dinda">
+        </div>
+    </section>
+
+    <!-- tentang aku -->
+    <section class="about-section">
+        <h2>TENTANG AKU</h2>
+        <p>
+            Nama saya <b>Dienda Ayu</b>, seorang pelajar SMK jurusan <b>DESAIN KOMUNIKASI VISUAL (DKV)</b> dari 
+            sekolah <b>SMK NEGERI 1 KOTA TANGERANG</b>. saat ini saya duduk dibangku kelas 11 atau 2 SMK. 
+            Website yang saya bikin ini untuk ruang kecil tentang saya ^^
+        </p>
+    </section>
+
+    <!-- hobi -->
+    <section class="fav-section">
+        <h2>HAL YANG AKU SUKA</h2>
+        <div class="fav-grid">
+            <div class="fav-card">
+                <h3>jogging</h3>
+                <div class="fav-img-box">
+                    <img src="dinda/photo-6125325557349159728-x.jpg" alt="foto jogging dinda">
+                </div>
+                <p>
+                    suka olahraga tapi lebih ke jogging aja, dan ini bukan rutinitas mingguan aku. 
+                    kadang jogging kalau lagi mau atau sempat aja, cuma buat gerakin kaki biar ga sering pegel.
+                </p>
+            </div>
+            <div class="fav-card">
+                <h3>masak</h3>
+                <div class="fav-img-box">
+                    <img src="dinda/kulai.jpe" alt="foto masak dinda">
+                </div>
+                <p>
+                    suka banget masak buatan sendiri dengan resep yang ada di youtube atau fyp tiktok. 
+                    terus buat makanan enak tapi simple. memasak itu seni yang seru buat aku.
+                </p>
+            </div>
+            <div class="fav-card">
+                <h3>menggambar</h3>
+                <div class="fav-img-box">
+                    <img src="dinda/photo-6125325557349159727-y.jpg" alt="foto menggambar dinda">
+                </div>
+                <p>seru banget pokonya.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- musik -->
+    <section class="music-section">
+        <h2>MUSIK FAVORIT</h2>
+        <p>beberapa lagu favorit yang selalu aku dengerin hari hari dan ga akan pernah bosen:</p>
+        <ul class="song-list">
+            <li><a href="https://open.spotify.com/intl-id/track/73Zoq6Z5lXVJPAERw2s9fp" target="_blank">🎵 star - colde</a></li>
+            <li><a href="https://open.spotify.com/intl-id/track/7lV0M6ulaapTNZJzx8stw0" target="_blank">🎵 starlight - chani (sf9)</a></li>
+            <li><a href="https://open.spotify.com/intl-id/track/0abcdef12345" target="_blank">🎵 yours - raiden, chanyeol, leehi, changmo</a></li>
+        </ul>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer-section">
+        <h2>AYO BERTEMAN!</h2>
+        <div class="social-links">
+            <a href="https://instagram.com" target="_blank">instagram</a>
+            <a href="https://tiktok.com" target="_blank">tiktok</a>
+            <a href="mailto:emailkamu@gmail.com">email</a>
+        </div>
+        <p class="copy">&copy; 2026 dinda ayu. all rights reserved.</p>
+    </footer>
+
+</body>
+</html>
