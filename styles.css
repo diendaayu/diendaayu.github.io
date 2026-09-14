@@ -1,9 +1,15 @@
+/* ==========================================
+   RESET & LAYOUT DASAR
+   ================================---------- */
 body {
     background: #000a2e;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 img {
@@ -11,6 +17,9 @@ img {
     border-style: none;
 }
 
+/* ==========================================
+   EFEK BINTANG & AWAN
+   ================================---------- */
 #starsLeft {
     position: absolute;
     left: 0;
@@ -25,69 +34,6 @@ img {
     right: 0;
     top: 5%;
     opacity: 0.7;
-}
-
-#mainDiv {
-    color: #ffffffef;
-    top: 35%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    position: absolute;
-    z-index: 8;
-    align-items: center;
-    justify-content: center;
-    display: flex !important;
-    flex-direction: column !important;
-}
-
-#logo {
-    height: 35vh;
-    vertical-align: middle;
-    border-style: none;
-    box-sizing: border-box;
-}
-@media screen and (max-width: 720px) {
-    #mainDiv {
-        color: #ffffffef;
-        top: 40%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        position: absolute;
-        z-index: 8;
-        align-items: center;
-        justify-content: center;
-        display: flex !important;
-        flex-direction: column !important;
-    }
-
-    #logo {
-        height: 125px;
-        vertical-align: middle;
-        position: relative;
-    }
-}
-#MainText {
-    color: #ffffffef;
-    text-align: center !important;
-}
-
-h1 {
-    font-size: 2.25rem;
-    font-weight: 500;
-    line-height: 1.2;
-    margin-top: 0;
-}
-
-@keyframes Animation {
-    0% {
-        background-position: 0% 0%;
-    }
-    50% {
-        background-position: 100% 0%;
-    }
-    100% {
-        background-position: 0% 0%;
-    }
 }
 
 .clouds {
@@ -110,6 +56,50 @@ h1 {
     z-index: 1;
 }
 
+/* ==========================================
+   KONTAINER UTAMA & FOTO / LOGO
+   ================================---------- */
+#mainDiv {
+    color: #ffffffef;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    z-index: 8;
+    align-items: center;
+    justify-content: center;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+/* Pengaturan Foto/Logo agar Bulat & Sesuai Tema */
+#logo {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%; /* Membuat foto menjadi bentuk lingkaran sempurna */
+    border: 3px solid rgba(255, 255, 255, 0.4); /* Garis tepi semi-transparan */
+    box-shadow: 0 0 20px rgba(95, 145, 255, 0.5); /* Efek cahaya biru selaras dengan tema malam */
+    vertical-align: middle;
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Memberi jarak antara foto dan teks di bawahnya */
+}
+
+#MainText {
+    color: #ffffffef;
+    text-align: center !important;
+}
+
+h1 {
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+}
+
+/* ==========================================
+   ANIMASI BINTANG JATUH (SHOOTING STAR)
+   ================================---------- */
 .night {
     position: relative;
     width: 100%;
@@ -138,11 +128,9 @@ h1 {
     0% {
         width: 0;
     }
-
     30% {
         width: 100px;
     }
-
     100% {
         width: 0;
     }
@@ -152,12 +140,14 @@ h1 {
     0% {
         transform: translateX(0);
     }
-
     100% {
         transform: translateX(300px);
     }
 }
 
+/* ==========================================
+   VIDEO & TOMBOL PLAY
+   ================================---------- */
 .video {
     height: 100%;
     width: 100%;
@@ -166,12 +156,12 @@ h1 {
 
 .video-container {
     position: relative;
-    display: inline-block; /* Or 'block' depending on layout */
+    display: inline-block;
 }
 
 .video-container img {
-    display: block; /* Remove bottom space/margin under the image */
-    width: 100%; /* Adjust based on your needs */
+    display: block;
+    width: 100%;
     height: auto;
 }
 
@@ -181,6 +171,20 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     cursor: pointer;
-    width: 64px; /* Adjust size of the play button */
-    height: 64px; /* Adjust size of the play button */
+    width: 64px;
+    height: 64px;
+}
+
+/* ==========================================
+   MEDIA QUERY (RESPONSIF UNTUK HP / LAYAR KECIL)
+   ================================---------- */
+@media screen and (max-width: 720px) {
+    #mainDiv {
+        top: 40%;
+    }
+
+    #logo {
+        width: 120px;
+        height: 120px; /* Ukuran foto disesuaikan agar pas di layar kecil */
+    }
 }
